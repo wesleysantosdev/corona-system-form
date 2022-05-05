@@ -1,0 +1,2 @@
+# corona-system-form
+ Esse é um projeto que precisei fazer para a faculdade, onde tínhamos que criar uma interface para um aplicativo chamado "Sistema c@r@navirus", que consistia em cadastrar brasileiros no aplicativo, e o mesmo tinha que conter informações específicas como vacinação e tipo sanguíneo, além das informações padrão como nome, senha, endereço etc.  Era necessário apenas fazer a parte em HTML, mas aproveitei para colocar CSS e deixar responsivo para todos os dispositivos mais usados.
