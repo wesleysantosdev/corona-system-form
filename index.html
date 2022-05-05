@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/hospital-icon.png" type="image/x-icon">
+    <title>Formulário</title>
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>Cadastro</h1>
+        </header> 
+        <form action="#">
+            <fieldset id="user-id">
+                <legend class="user-id-title">Identificação do Usuário</legend>
+                    <section class="input-group">
+                        <div class="input-box">
+                            <label for="first-name">Nome:</label>
+                            <input id="first-name" type="text" name="name" maxlength="30" placeholder="Digite seu nome">
+                            <label for="last-name">Sobrenome:</label>
+                            <input id="last-name" type="text" name="name" maxlength="30" placeholder="Digite seu sobrenome">
+                        </div>
+                        <div class="input-box">
+                            <label for="password">Senha: </label>
+                            <input id="password" type="password" name="password"  size="8" maxlength="8" placeholder="8 dígitos">
+                            <label for="confirm-password">Confirmar senha: </label>
+                            <input id="confirm-password" type="password" name="password" size="8" maxlength="8" placeholder="8 dígitos">
+                        </div>
+                        <div class="gender-group">
+                            <label for="gender">Sexo:</label>
+                            <div class="gender-input"> 
+                                <label for="male-gender">Masculino</label>
+                                <input id="male-gender" type="radio" name="gender" checked>
+                            </div>
+                            <div class="gender-input">
+                                <label for="female-gender">Feminino</label>
+                                <input id="female-gender" type="radio" name="gender">
+                            </div>
+                            <div class="gender-input">
+                                <label for="other">Outro</label>
+                                <input id="other" type="radio" name="gender">
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <label for="birth-date">Data de Nascimento</label>
+                            <input id="birth-date" type="date" name="birth-date">
+                        </div>
+                    </section>
+            </fieldset>
+            <fieldset id="user-address">
+                <legend class="user-address-tile">Endereço do usuário</legend>
+                    <section class="input-group">
+                        <div class="input-box">
+                            <label for="street">Logradouro:</label>
+                            <input id="street" type="text" name="street" maxlength="40" placeholder="Ex: Rua Ipiranga">
+                            <label for="house-number">Nº:</label>
+                            <input id="house-number" type="number" name="house-number" min="0" max="9999" placeholder="Ex: 123">
+                        </div>    
+                            <div class="input-box">
+                                <label for="complement">Complemento:</label>
+                                <input id="complement" type="text" name="complement" maxlength="8" placeholder="Ex: apt. 76">
+                                <label for="zip-code">CEP:</label>
+                                <input id="zip-code" type="number" name="zip-code" maxlength="8" placeholder="Apenas números">
+                            </div>
+                        <div class="input-box"> 
+                            <label for="state">Estado:</label>
+                                <select id="state" name="state" >
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP" selected>São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                                </select>
+                            <label for="city">Cidade:</label>
+                            <input id="city" type="text" name="city"  maxlength="40" placeholder="Ex: São paulo">
+                        </div>
+                    </section>
+            </fieldset>
+            <fieldset id="user-contact">
+                <legend>Contato do usuário</legend>
+                    <section class="input-group">
+                        <div class="input-box">
+                            <label for="telephone">Telefone residencial:</label>
+                            <input id="telephone" type="tel" name="telephone" placeholder="(xx) xxxx-xxxx">
+                            <label for="cellphone">Telefone celular:</label>
+                            <input id="cellphone" type="tel" name="cellphone" placeholder="(xx) xxxxx-xxxx">
+                        </div>
+                        <div class="input-box">
+                            <label for="job">Profissão:</label>
+                            <input id="job" type="text" name="job" maxlength="30" placeholder="Ex: Advogado(a)">
+                        </div>
+                        <div class="input-box">
+                            <label for="job-address">Local de trabalho:</label>
+                            <input id="job-address" type="text" name="job-address" maxlength="40" placeholder="Ex: Rua São João">
+                        </div>
+                    </section>
+            </fieldset>
+            <fieldset id="user-blood-type">
+                <legend>Tipo sanguíneo</legend>
+                    <section class="input-group">
+                        <div class="input-box">
+                            <label for="type-a">Tipo A:</label>
+                            <input id="type-a" type="radio" name="blood" checked>
+                            <label for="type-b">Tipo B:</label>
+                            <input id="type-b" type="radio" name="blood">
+                            <label for="type-ab">Tipo AB:</label>
+                            <input id="tipo-ab" type="radio" name="blood">
+                            <label for="type-o">Tipo O:</label>
+                            <input id="type-o" type="radio" name="blood">
+                        </div>
+                        <div class="input-box">
+                            <label for="positive-rh">Positivo (+)</label>
+                            <input id="positive-rh" type="radio" name="rh-blood" checked>
+                            <label for="negative-rh">Negativo (-)</label>
+                            <input id="negative-rh"type="radio" name="rh-blood">   
+                        </div>
+                    </section>
+            </fieldset>
+            <fieldset id="user-vaccination">
+                <legend>Vacinação</legend>
+                    <section class="input-group">
+                        <div class="input-box">
+                            <input id="first-dose" type="checkbox" name="vaccination">
+                            <label for="first-dose">1º Dose - Marca:</label>
+                            <input id="vaccine-brand" type="text" name="vaccine-brand"  placeholder="Ex: Pfizer">
+                        </div>
+                        <div class="input-box">
+                            <input id="second-dose" type="checkbox" name="vaccination">
+                            <label for="second-dose">2º Dose - Marca:</label>
+                            <input id="vaccine-brand" type="text" name="vaccine-brand"  placeholder="Ex: Pfizer">
+                        </div>
+                        <div class="input-box">
+                            <input id="third-dose" type="checkbox" name="vaccination">
+                            <label for="third-dose">3º Dose - Marca:</label>
+                            <input id="vaccine-brand" type="text" name="vaccine-brand"  placeholder="Ex: Pfizer">
+                        </div>                 
+                    </section>
+            </fieldset>               
+        </form>
+        <div class="button">
+            <input type="submit" value="Enviar"> 
+        </div>
+    </main>
+</body>
+</html>
