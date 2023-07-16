@@ -41,7 +41,7 @@ The project is deployed using GitHub Pages. You can access it by clicking the li
 <a href="https://wesleysantosdev.github.io/corona-system-form/" target="_blank">Corona System Form</a>
 
 ## Contact
-If you have any suggestions for this project or any other, feel free to contact me:
+If you have any suggestions for this project, feel free to contact me:
 
 - Name: Wesley Santos
 - Email: wesleysantosdev@outlook.com
